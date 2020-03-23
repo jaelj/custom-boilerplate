@@ -1,0 +1,32 @@
+//default styles
+
+body {
+  background: $bgcolor;
+  font-family: $font;
+}
+
+header, section{
+	@include animotion;
+}
+
+.container{
+ @include box;
+}
+
+h1,h2,h3,h4 {
+  font-family: $headfont;
+  text-align: center;
+  animation-duration: 15s;
+}
+
+
+[data-aos="flip-left"]{
+	transition-duration: 2s !important;
+}
+
+[data-aos="flip-right"]{
+	transition-duration: 2s !important;
+}
+// button{
+// 	text-align: center;
+// }

@@ -1,0 +1,14 @@
+@mixin box{
+	background: white;
+	border: 1px solid black;
+	padding: $space;
+	margin-bottom: $space;
+	margin-right: $sideR;
+	margin-left: $sideL;
+}
+
+@mixin animotion{
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: 3;
+}
