@@ -13,7 +13,12 @@ header, section{
  @include box;
 }
 
-h1,h2,h3,h4 {
+h1{
+	text-align:center;
+	font-size: 4em;
+}
+
+h2,h3,h4 {
   font-family: $headfont;
   text-align: center;
   animation-duration: 15s;

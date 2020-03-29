@@ -1,7 +1,7 @@
 {
   "name": "sousvide",
   "version": "1.0.0",
-  "description": "",
+  "description": "* web project starter \t* smashup of html5 boilerplate \t* with node, node-sass, gulp-sass, and gulp",
   "main": "gulpfile.js",
   "directories": {
     "doc": "doc"
@@ -18,5 +18,14 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaelj/custom-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaelj/custom-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jaelj/custom-boilerplate#readme"
 }
