@@ -1,39 +1,39 @@
-console.log('js in the house')
-AOS.init()
-// $(function(){
+//Idea found in a youtube video and on anime.js website
 
-// 	$('#anibutt').click(function(){
-// 		animate('#anihead', 'bounce');
-// 		animate('#anibody', 'rubberBand');
-// 		return false;
-// });
-// 	function animate(element, animation){
-// 		$(element).addClass('animated '+animation);
-// 		var wait = setTimeout(function(){
-// 			$(element).removeClass('animated '+animation);
-// 		}, 1000);
-// 	}
-// });
+let tl = anime.timeline({
+    easing: "easeOutExpo",
+    duration: 3500,
+    loop:true
+  })
 
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+tl.add({
+  targets: ".container .column",
+  backgroundColor: "rgb(250, 250, 155)",
+  width: "90%",
+  delay: anime.stagger(500)
+})
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+tl.add({
+  targets: ".container .column",
+  backgroundColor: "rgb(255, 210, 77)",
+  width: "100%",
+})
 
-});
+anime({
+  targets: '.main-title',
+  rotate: {
+    value: 360,
+    duration: 1800,
+    easing: 'easeInOutQuart'
+  },
+  scale: {
+    value: 2.5,
+    duration: 1600,
+    delay: 2500,
+    endDelay: 2000,
+    // easing: 'easeInOutQuart'
+  },
+  delay: 500, // All properties except 'scale' inherit 250ms delay
+  loop: true
+})
+

@@ -3,39 +3,83 @@
 <html>
  
 <head>
-<link rel="stylesheet" href="css/main.css">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159919280-1"></script>
-
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="scss/_animate.scss">
 	<meta charset="utf-8">
-	
 	<title>index</title>
-
 <head>
 
 <body>
+	<h1 class="main-title">Fun Things to Do During Corona Season</h1>
+	<img class="beach" src="img/beach-chair.png" alt="Beach Chair and Umbrella">
+	<section class="container">
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+	</section>
+	<div class="slide2">
+		<br><br>
+		<div class="skill-title">
+			<div data-aos="zoom-in" data-aos-duration="4000">
+				<h3>Learn A New Skill</h3>
+			</div>
+		</div>
+		<br><br>
+		<section class="fun-container">
+			<div class="skill">
+				<p>Have you ever wanted to learn something new, whether it be a new language, an instument, to cook, or even try yoga. Then get up, pick up a book or your computer and start learning. With so much time on your hands now that you are living it up at home, you can take the next step to achieving your goals and getting what you want from life.</p>
+			</div>
+			<img class="skillimg" src="img/learning.png">
+		</section>
+	</div>	
 
-<h1>Creative Wev Development</h1>
 
-<a href="bash-me.html"><h2>Bash Me</h2></a>
+	<div class="slide3">
+		<br><br>
+		<div class="skill-title">
+			<div data-aos="zoom-in" data-aos-duration="4000">
+				<h3>Treat Yourself To A Spa Day</h3>
+			</div>
+		</div>
+		<br><br>
+		<section class="fun-container">
+			<div class="spa">
+				<p>Nothing beats a day dedicated just for yourself and now with everything being done from home there is no reason not to. Grab your facemask, bath bomb and a glass of champagne and get ready to just relax and enjoy some quality you time.</p>
+				<p>If you want a true social spa day experience, grab your phone and FaceTime your friends. It'll almost be as though you're all together. 
+			</div>
+			<img class="skillimg" src="img/spa.png">
+		</section>
+	</div>	
 
-<a href="commitment/tapestry.html"><h2>Commitment</h2></a>
+	<div class="slide4">
+		<br><br>
+		<div class="skill-title">
+			<div data-aos="zoom-in" data-aos-duration="4000">
+				<h3>Go Outside And Enjoy Some Fresh Air</h3>
+			</div>
+		</div>
+		<br><br>
+		<section class="fun-container">
+			<div class="nature">
+				<p>Just because your stuck at home doesn't mean you have to stay inside the whole time. Maybe it's time to pump up your old bike's tires or find that longboard you set aside for later or maybe you take your dog out for a walk.</p>
+				<p>The options are limitless. The best part is that you don't need people for any of these activities.</p>
+			</div>
+			<img class="skillimg" src="img/nature.png">
+		</section>
+	</div>	
 
-<a href="https://github.com/jaelj/commitment"><h2>Commitment GitHub</h2></a>
-
-<a href="exquisite-corpse/index.html"><h2>Exquisite Corpse</h2></a>
-
-<a href="responsive_parallax_narrative/index.html"><h2>Parallax Narrative</h2></a>
-
-<a href=""><h2>VR Game</h2></a>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-159919280-1');
+	AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
